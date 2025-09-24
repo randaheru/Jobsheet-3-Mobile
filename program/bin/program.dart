@@ -3,7 +3,7 @@ import 'dart:math';
 
 void main() {
   Random random = Random();
-  int target = random.nextInt(100) + 1; // Angka 1 - 100
+  int target = random.nextInt(100) + 1; // Angka acak 1 - 100
   int kesempatan = 5;
 
   print("🎮 Game Tebak Angka (1 - 100)");
@@ -30,6 +30,15 @@ void main() {
       print("Sisa kesempatan: $kesempatan\n");
     }
   }
+}
+
+/// Fungsi untuk menghitung faktorial
+int faktorial(int n) {
+  int hasil = 1;
+  for (int i = 1; i <= n; i++) {
+    hasil *= i;
+  }
+  return hasil;
 }
 
 /// Fungsi untuk cek bilangan prima
